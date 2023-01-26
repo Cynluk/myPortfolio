@@ -6,7 +6,7 @@
   padding: 0 30px;
   background-color: #222;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-  color: aquamarine;
+  color: white;
   width: 90%;
   height: 80px;
   border-radius: 13px;
@@ -35,8 +35,20 @@
   padding: 0.7rem 1rem;
 }
 .navMenuItem:hover {
-  background: aquamarine;
+  background: #6dc7ff;
   color: black;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
+}
+
+.navMenuResume {
+  padding: 0.7rem 1rem;
+  background: #c822ff;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.c {
+  padding: -6rem;
 }

@@ -1,9 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import { Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import Homepage from "./components/Homepage";
+import ContactMe from "./components/ContactMe";
+
+import background from "./assets/background.jpg";
 
 import "./App.css";
 
@@ -11,11 +13,24 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div
+      className="Background"
+      //style={{
+      //   backgroundImage: `url(${background})`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "contain",
+      //   backgroundSize: "cover",
+      //   height: "55vw",
+      //   width: "230vh",
+
+      //   filter: "blur(2.5px)",
+      // }}
+    >
       <NavBar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="/aboutMe" element={<Portfile />} /> */}
+
+        <Route path="/contact" element={<ContactMe />} />
         {/* <Route path="/projects" element={<MyProjects />} /> */}
       </Routes>
     </div>
