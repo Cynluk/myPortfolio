@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Homepage from "./components/Homepage";
 import ContactMe from "./components/ContactMe";
+import Resume from "./components/Resume";
 
 import background from "./assets/background.jpg";
 
@@ -32,6 +33,7 @@ function App() {
 
         <Route path="/contact" element={<ContactMe />} />
         {/* <Route path="/projects" element={<MyProjects />} /> */}
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
   );

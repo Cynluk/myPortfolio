@@ -5,10 +5,7 @@ export default function Homepage() {
   return (
     <div className={styles.home}>
       <p className={styles.hello}>Hello,</p>
-      <p className={styles.name}>
-        I'm <img src={icon} className={styles.c} />
-        ynthia,
-      </p>
+      <p className={styles.name}>I'm Cynthia,</p>
       <p className={styles.dev}>a web developer.</p>
     </div>
   );
